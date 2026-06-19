@@ -31,12 +31,13 @@ gradinv <- grDevices::colorRampPalette(c("#33358a", "#76acce", "#fff99a",  "#e22
 #'
 #' The object contains \code{data.frame}-class objects to be used with the \code{\link{expand}} function to produce full calibrated color ramps.
 #'
-#' @format A \code{list} with 6 \code{data.frame} elements:
+#' @format A \code{list} with 7 \code{data.frame} elements:
 #' \describe{
 #' \item{\code{demcmap}}{: The "demcmap" theme, based on MatLab's \code{demcmap}. }
 #' \item{\code{etopo}}{: The "etopo" theme, approximate elevation-color assignments based on the the ETOPO Global Relief Model poster (https://www.ncei.noaa.gov/media/3340). }
 #' \item{\code{jakarta}}{: The "Jakarta" theme, color values by Deviantart user \emph{Arcanographia}. }
 #' \item{\code{havanna2}}{: The "Havanna-2" theme, color values by Deviantart user \emph{Arcanographia}.}
+#' \item{\code{ptolemy}}{: The "Ptolemy" theme, color values extracted from the 'The world map after Ptolemy's first projection from a Greek manuscript edition of the Geography' (Burney MS 111). }
 #' \item{\code{tokio1}}{: The "Tokio-1" theme, color values by Deviantart user \emph{Arcanographia}.}
 #' \item{\code{zagreb}}{: The "Zagreb" theme, color values by Deviantart user \emph{Arcanographia}.}
 #' }
@@ -47,6 +48,22 @@ gradinv <- grDevices::colorRampPalette(c("#33358a", "#76acce", "#fff99a",  "#e22
 #' jakExp <- expand(topos$jakarta, n=200)
 #' plot(jakExp)
 "topos"
+
+#' Bathymetric color palettes with tiepoints
+#'
+#' The object contains \code{data.frame}-class objects to be used with the \code{\link{expand}} function to produce full calibrated color ramps.
+#'
+#' @format A \code{list} with 1 \code{data.frame} elements:
+#' \describe{
+#' \item{\code{sandy}}{: A color ramp resembling a sandy beach. }
+#' }
+#' @usage data(bathymetry)
+#'
+#' @examples
+#' data(bathymetry)
+#' sandyExp <- expand(bathymetry$sandy, n=200)
+#' plot(sandyExp)
+"bathymetry"
 
 
 #' Topographic gradient map color map of the PALEOMAP project

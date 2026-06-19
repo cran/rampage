@@ -5,12 +5,13 @@
 \alias{topos}
 \title{Topographic color palettes with tiepoints}
 \format{
-A \code{list} with 6 \code{data.frame} elements:
+A \code{list} with 7 \code{data.frame} elements:
 \describe{
 \item{\code{demcmap}}{: The "demcmap" theme, based on MatLab's \code{demcmap}. }
 \item{\code{etopo}}{: The "etopo" theme, approximate elevation-color assignments based on the the ETOPO Global Relief Model poster (https://www.ncei.noaa.gov/media/3340). }
 \item{\code{jakarta}}{: The "Jakarta" theme, color values by Deviantart user \emph{Arcanographia}. }
 \item{\code{havanna2}}{: The "Havanna-2" theme, color values by Deviantart user \emph{Arcanographia}.}
+\item{\code{ptolemy}}{: The "Ptolemy" theme, color values extracted from the 'The world map after Ptolemy's first projection from a Greek manuscript edition of the Geography' (Burney MS 111). }
 \item{\code{tokio1}}{: The "Tokio-1" theme, color values by Deviantart user \emph{Arcanographia}.}
 \item{\code{zagreb}}{: The "Zagreb" theme, color values by Deviantart user \emph{Arcanographia}.}
 }
